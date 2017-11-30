@@ -122,6 +122,7 @@ class Labels extends Group {
       });
       labelShape.setSilent('origin', origin);
       labelShape.name = 'label'; // 用于事件标注
+      this.get('eventInfo') && labelShape.setSilent('eventInfo', this.get('eventInfo'));
       return labelShape;
     }
   }

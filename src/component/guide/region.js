@@ -34,6 +34,7 @@ class Region extends Base {
       }, rectStyle)
     });
     regionGroup.name = 'guide-region';
+    self.eventInfo && regionGroup.setSilent('eventInfo', self.eventInfo);
     self.el = regionGroup;
   }
 

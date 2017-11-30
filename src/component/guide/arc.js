@@ -57,6 +57,7 @@ class Arc extends Base {
       }, self.style)
     });
     arcShape.name = 'guide-arc';
+    self.eventInfo && arcShape.setSilent('eventInfo', self.eventInfo);
     self.el = arcShape;
   }
 }

@@ -61,6 +61,7 @@ class Base extends Group {
         }, title)
       });
       titleShape.name = 'legend-title';
+      this.get('eventInfo') && titleShape.setSilent('eventInfo', this.get('eventInfo'));
       this.set('titleShape', titleShape);
     }
   }

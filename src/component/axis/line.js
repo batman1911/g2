@@ -154,6 +154,7 @@ class Line extends Base {
         attrs: cfg
       });
       titleShape.name = 'axis-title';
+      self.get('eventInfo') && titleShape.setSilent('eventInfo', self.get('eventInfo'));
     }
   }
 
